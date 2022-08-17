@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="sample-registration-form-validation.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>Registration Form</h1>
+Use tab keys to move from one input field to the next.
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="First Name">First Name:</label></li>
+<li><input type="text" name="First Name:" size="12" /></li>
+
+<li><label for="Last Name">Last Name:</label></li>
+<li><input type="text" name="Last Name:" size="12" /></li>
+<li><label for="Phone No.">Phone No:</label></li>
+<li><input type="text" name="Phone No:" size="10" /></li>
+<li><label for="e-mail:">e-mail:</label></li>
+<li><input type="text" name="e-mail:" size="10" /></li>
+<li><label for="Password:">Password:</label></li>
+<li><input type="text" name="Password:" size="10" /></li>
+
+
+
+<li><label for="city">City:</label></li>
+<li><select name="city">
+<option selected="" value="Default">(Please select a city)</option>
+<option value="AF">Pune</option>
+<option value="AL">Numbai</option>
+<option value="DZ">Ahmednagar</option>
+<option value="AS">Nashik</option>
+<option value="AD">Nagpur</option>
+</select></li>
+
+
+<li><input type="submit" name="submit" value="Submit" /></li>
+
+
+</ul>
+</form>
+
+</body>
+</html>
